@@ -1,12 +1,9 @@
 import clsx from 'clsx';
 import { FC } from 'react';
-
 import { useNavigate } from 'react-router-dom';
-
 import { toast } from 'react-toastify';
 
 import { GameCard } from './GameCard';
-
 import s from './ListOfGames.module.scss';
 
 import { useAppDispatch, useAppSelector, useIsAuth } from '../../hooks';
