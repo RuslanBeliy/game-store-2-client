@@ -48,7 +48,7 @@ const uploadImageSlice = createSlice({
     builder.addCase(uploadImage.fulfilled, (state, { payload }) => {
       state.isLoading = false;
       state.errorMessage = '';
-      state.imageUrl = 'http://localhost:8080/api' + payload.url;
+      state.imageUrl = 'https://game-store-ars7.onrender.com/api' + payload.url;
     });
   },
 });
