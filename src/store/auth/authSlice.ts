@@ -64,7 +64,6 @@ export const authDelete = createAsyncThunk<{ message: string }, undefined, { rej
 );
 
 interface State {
-  firstLoading: boolean;
   errorMessage: string;
   isLoading: boolean;
   user: User | null;
@@ -76,7 +75,6 @@ const initialState: State = {
   isLoading: true,
   user: null,
   token: '',
-  firstLoading: true,
 };
 
 const authSlice = createSlice({
@@ -126,25 +124,22 @@ const authSlice = createSlice({
       state.errorMessage = payload ?? 'error';
       state.token = '';
       state.user = null;
-      state.firstLoading = false;
     });
     builder.addCase(authMe.fulfilled, (state, { payload }) => {
       state.isLoading = false;
       state.errorMessage = '';
       state.user = payload.userData;
       state.token = getTokenLS();
-      state.firstLoading = false;
     });
     builder.addCase(authDelete.rejected, (state, { payload }) => {
       state.isLoading = false;
       state.errorMessage = payload ?? 'error';
     });
-    builder.addCase(authDelete.fulfilled, (state, { payload }) => {
+    builder.addCase(authDelete.fulfilled, (state) => {
       state.isLoading = false;
       state.errorMessage = '';
       state.user = null;
       state.token = '';
-      state.firstLoading = false;
     });
   },
 });
