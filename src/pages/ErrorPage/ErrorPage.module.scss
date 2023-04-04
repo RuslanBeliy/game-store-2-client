@@ -1,0 +1,11 @@
+.error {
+  padding: 30px 15px;
+  min-height: calc(100vh - 108px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.back {
+  margin-top: 30px;
+}

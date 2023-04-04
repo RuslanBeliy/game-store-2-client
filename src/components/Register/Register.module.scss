@@ -1,0 +1,34 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addAvatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+
+  svg,
+  img {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  svg {
+    position: absolute;
+    z-index: 5;
+    top: -5px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+  }
+}

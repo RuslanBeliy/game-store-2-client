@@ -1,0 +1,30 @@
+.choisePlatform {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--gray-light);
+  transition: all 0.2s ease-in-out;
+
+  button {
+    padding: 7px 0;
+    height: 100%;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.active {
+  position: relative;
+  color: #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--accent);
+  }
+}

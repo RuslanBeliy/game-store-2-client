@@ -1,0 +1,42 @@
+.homePage {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.topFilter {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+}
+.wrap {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 576px) {
+    flex-direction: column-reverse;
+  }
+}
+.listOfGames {
+  width: 100%;
+}
+.filter {
+  max-width: 200px;
+  width: 100%;
+  align-self: flex-start;
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+}
+.pagination {
+  padding-top: 30px;
+  text-align: center;
+}

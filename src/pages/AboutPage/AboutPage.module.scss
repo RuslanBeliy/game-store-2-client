@@ -1,0 +1,36 @@
+.aboutPage {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: var(--bg-second);
+  min-height: calc(100vh - 108px);
+  color: var(--gray);
+}
+
+.box {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+.mainTitle {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.secondTitle {
+  margin-bottom: 20px;
+}
+.companyName {
+  font-weight: 700;
+}
+.row {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: 5px;
+}

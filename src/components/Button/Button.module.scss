@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+}
+.button-main {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--accent-hover);
+  }
+}
+.button-red {
+  border: 1px solid rgb(179, 37, 37);
+  background: rgb(179, 37, 37);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: rgb(209, 26, 26);
+  }
+}
+.button-outline {
+  background: transparent;
+  border: 1px solid var(--gray-light);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+.button-sm {
+  padding: 5px 10px;
+}
+.button-md {
+  padding: 10px;
+}

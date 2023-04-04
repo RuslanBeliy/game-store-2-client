@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  background: var(--accent);
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: var(--accent-hover);
+  }
+  &:focus {
+    background: none;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+  }
+}
+
+.active {
+  background: var(--accent-light);
+}

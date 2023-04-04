@@ -1,0 +1,43 @@
+.input {
+  position: relative;
+  color: #e2e1e1;
+  input {
+    padding: 10px;
+    background: var(--gray);
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    &::placeholder {
+      color: #e2e1e1;
+    }
+  }
+}
+
+.input-main {
+  input {
+    border-radius: 5px;
+    border: 1px solid var(--gray-light);
+  }
+}
+.input-search {
+  input {
+    border-radius: 50px;
+    padding-left: 35px;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+}
+.error {
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  color: rgb(238, 31, 31);
+  font-size: 14px;
+}

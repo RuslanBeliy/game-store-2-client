@@ -1,0 +1,31 @@
+.listOfOrders {
+  overflow: auto;
+  table {
+    width: 100%;
+
+    th {
+      padding: 0 10px 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    td {
+      padding-bottom: 10px;
+
+      &:first-child {
+        width: 100%;
+        min-width: 140px;
+      }
+    }
+  }
+}
+
+.order {
+  margin-bottom: 40px;
+}
+
+.title {
+  border-bottom: 2px dashed var(--gray-light);
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
