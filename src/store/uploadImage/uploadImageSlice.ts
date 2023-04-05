@@ -48,7 +48,7 @@ const uploadImageSlice = createSlice({
     builder.addCase(uploadImage.fulfilled, (state, { payload }) => {
       state.isLoading = false;
       state.errorMessage = '';
-      state.imageUrl = 'https://game-store-ars7.onrender.com/api' + payload.url;
+      state.imageUrl = 'https://crazy-gold-hospital-gown.cyclic.app/api' + payload.url;
     });
   },
 });

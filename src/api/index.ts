@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://game-store-ars7.onrender.com/api',
+  baseURL: 'https://crazy-gold-hospital-gown.cyclic.app/api',
 });
 
 export { instance as axios };
