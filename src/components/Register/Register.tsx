@@ -1,8 +1,6 @@
-import { FC, useEffect, useRef, useState } from 'react';
-
+import { FC, useRef, useState } from 'react';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -10,7 +8,6 @@ import s from './Register.module.scss';
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { routes } from '../../router/routes';
-import { authSelector } from '../../store/auth/authSelector';
 import { authRegister } from '../../store/auth/authSlice';
 import { uploadImageSelector } from '../../store/uploadImage/uploadImageSelector';
 import { uploadImage, uploadImageActions } from '../../store/uploadImage/uploadImageSlice';
@@ -26,7 +23,6 @@ export const Register: FC<Props> = () => {
   const [validation, setValidation] = useState<{ name: string; mess: string }[]>([]);
   const dispatch = useAppDispatch();
   const { imageUrl } = useAppSelector(uploadImageSelector);
-  const { token } = useAppSelector(authSelector);
   const fileRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 

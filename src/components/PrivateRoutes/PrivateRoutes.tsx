@@ -1,5 +1,4 @@
 import { FC } from 'react';
-
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 
 import s from './PrivateRoutes.module.scss';

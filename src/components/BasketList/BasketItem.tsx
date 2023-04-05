@@ -1,5 +1,4 @@
 import { FC } from 'react';
-
 import { MdClose } from 'react-icons/md';
 
 import s from './BasketList.module.scss';

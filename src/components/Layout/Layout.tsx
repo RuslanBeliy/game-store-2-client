@@ -1,12 +1,11 @@
 import { FC, useEffect, useState } from 'react';
-
 import { InfinitySpin } from 'react-loader-spinner';
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 import s from './Layout.module.scss';
-import 'react-toastify/dist/ReactToastify.css';
 
+import 'react-toastify/dist/ReactToastify.css';
 import { useAppDispatch } from '../../hooks';
 import { authMe } from '../../store/auth/authSlice';
 import { Footer } from '../Footer';

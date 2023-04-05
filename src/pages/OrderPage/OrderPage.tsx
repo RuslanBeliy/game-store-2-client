@@ -1,5 +1,4 @@
 import { FC, useEffect } from 'react';
-
 import { InfinitySpin } from 'react-loader-spinner';
 
 import s from './OrderPage.module.scss';

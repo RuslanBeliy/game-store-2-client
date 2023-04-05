@@ -1,17 +1,14 @@
 import { FC } from 'react';
-
 import { BiUserCircle } from 'react-icons/bi';
-
 import { toast } from 'react-toastify';
 
 import s from './UserProfile.module.scss';
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
-import { routes } from '../../router/routes';
 import { authSelector } from '../../store/auth/authSelector';
 import { authDelete } from '../../store/auth/authSlice';
-import { Button } from '../Button';
 import { formateDate } from '../../utils';
+import { Button } from '../Button';
 
 interface Props {}
 

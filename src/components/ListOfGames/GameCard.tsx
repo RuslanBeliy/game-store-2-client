@@ -4,7 +4,7 @@ import { IoMdAddCircleOutline } from 'react-icons/io';
 import s from './ListOfGames.module.scss';
 
 import { Game } from '../../types/Game';
-import { Select, SelectPlatform } from '../Select';
+import { SelectPlatform } from '../Select';
 
 interface Props extends Game {
   handleAddToCart: (val: string) => void;

@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { FC, useEffect, useRef, useState } from 'react';
-
 import { BiUserCircle } from 'react-icons/bi';
 import { RiShoppingCart2Fill } from 'react-icons/ri';
 import { Link, useLocation } from 'react-router-dom';
@@ -16,9 +15,7 @@ import { cartSelector } from '../../store/cart/cartSelector';
 import { setCartLS, setTokenLS } from '../../utils';
 import { Button } from '../Button';
 
-interface Props {
-
-}
+interface Props {}
 
 export const NavList: FC<Props> = () => {
   const isAuth = useIsAuth();

@@ -1,7 +1,5 @@
 import { FC } from 'react';
-
 import { useNavigate } from 'react-router-dom';
-
 import { toast } from 'react-toastify';
 
 import s from './CartPage.module.scss';
