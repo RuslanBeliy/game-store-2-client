@@ -1,3 +1,11 @@
+## About project  
+  
+
+App for searching and buying games 
+  
+Preview - https://game-store-2-client.vercel.app/
+
+
 ## How to run project  
   
 
