@@ -33,6 +33,7 @@ export const HomePage: FC<Props> = () => {
     currentPage.current = numPage;
     const data = filterRequest(filterParams, currentPage.current);
     dispatch(getAllGames(data));
+    window.scrollTo({ top: 0 });
   };
 
   const handleSearchInput = (e: React.ChangeEvent<HTMLInputElement>) => {
