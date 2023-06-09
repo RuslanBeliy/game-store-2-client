@@ -13,7 +13,7 @@ import { createOrder } from '../../store/order/orderSlice';
 
 interface Props {}
 
-export const CartPage: FC<Props> = () => {
+const CartPage: FC<Props> = () => {
   const { countGames, totalPrice, cart } = useAppSelector(cartSelector);
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
@@ -51,3 +51,5 @@ export const CartPage: FC<Props> = () => {
     </Container>
   );
 };
+
+export default CartPage

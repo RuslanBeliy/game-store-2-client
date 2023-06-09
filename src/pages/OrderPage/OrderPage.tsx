@@ -11,7 +11,7 @@ import { ErrorPage } from '../ErrorPage';
 
 interface Props {}
 
-export const OrderPage: FC<Props> = () => {
+const OrderPage: FC<Props> = () => {
   const dispatch = useAppDispatch();
   const { isLoading, errorMessage } = useAppSelector(orderSelector);
 
@@ -32,3 +32,5 @@ export const OrderPage: FC<Props> = () => {
     </Container>
   );
 };
+
+export default OrderPage;

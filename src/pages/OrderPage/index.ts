@@ -1,1 +1,3 @@
-export * from './OrderPage';
+import { lazy } from 'react';
+
+export const OrderPage = lazy(() => import('./OrderPage'));

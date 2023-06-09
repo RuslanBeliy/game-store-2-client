@@ -10,7 +10,7 @@ interface Props {
   notFound?: boolean;
 }
 
-export const ErrorPage: FC<Props> = ({ message, notFound = false }) => {
+const ErrorPage: FC<Props> = ({ message, notFound = false }) => {
   return (
     <Container className={s.error}>
       <Title>Ошибка: {message}</Title>
@@ -22,3 +22,5 @@ export const ErrorPage: FC<Props> = ({ message, notFound = false }) => {
     </Container>
   );
 };
+
+export default ErrorPage;

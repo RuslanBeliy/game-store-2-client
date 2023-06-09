@@ -6,7 +6,7 @@ import { Container, Title } from '../../components';
 
 interface Props {}
 
-export const AboutPage: FC<Props> = () => {
+const AboutPage: FC<Props> = () => {
   return (
     <div className={s.aboutPage}>
       <Container>
@@ -107,3 +107,5 @@ export const AboutPage: FC<Props> = () => {
     </div>
   );
 };
+
+export default AboutPage;

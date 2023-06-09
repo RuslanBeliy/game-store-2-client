@@ -19,3 +19,4 @@ export * from './Select';
 export * from './Skeleton';
 export * from './Title';
 export * from './UserProfile';
+export * from './Spinner';

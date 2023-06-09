@@ -6,7 +6,7 @@ import { AuthTemplate, Container, Login } from '../../components';
 
 interface Props {}
 
-export const LoginPage: FC<Props> = () => {
+const LoginPage: FC<Props> = () => {
   return (
     <Container className={s.loginPage}>
       <AuthTemplate title='Вход'>
@@ -15,3 +15,5 @@ export const LoginPage: FC<Props> = () => {
     </Container>
   );
 };
+
+export default LoginPage

@@ -20,7 +20,7 @@ import { ErrorPage } from '../ErrorPage';
 
 interface Props {}
 
-export const HomePage: FC<Props> = () => {
+const HomePage: FC<Props> = () => {
   const { countItems, errorMessage } = useAppSelector(gamesSelector);
   const filterParams = useAppSelector(filterSelector);
   const dispatch = useAppDispatch();
@@ -84,3 +84,5 @@ export const HomePage: FC<Props> = () => {
     </Container>
   );
 };
+
+export default HomePage;

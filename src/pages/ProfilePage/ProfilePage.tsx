@@ -6,10 +6,12 @@ import { Container, UserProfile } from '../../components';
 
 interface Props {}
 
-export const ProfilePage: FC<Props> = () => {
+const ProfilePage: FC<Props> = () => {
   return (
     <Container className={s.profilePage}>
       <UserProfile />
     </Container>
   );
 };
+
+export default ProfilePage;

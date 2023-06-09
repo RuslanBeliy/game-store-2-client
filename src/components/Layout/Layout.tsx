@@ -10,6 +10,7 @@ import { useAppDispatch } from '../../hooks';
 import { authMe } from '../../store/auth/authSlice';
 import { Footer } from '../Footer';
 import { Header } from '../Header';
+import { Spinner } from '../Spinner';
 
 interface Props {}
 
@@ -26,9 +27,7 @@ export const Layout: FC<Props> = () => {
   return (
     <>
       {firstLoading ? (
-        <div className={s.loader}>
-          <InfinitySpin width='200' color='#8b38c2' />
-        </div>
+        <Spinner />
       ) : (
         <div className={s.layout}>
           <Header />
